@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-  has_one :item
-  has_many :borrows
-  has_many :items, through: :borrows
+  has_many :deals_as_lender, class_name: "Deal"
+  has_many :deals_as_borrower, class_name: "Deal"
 end

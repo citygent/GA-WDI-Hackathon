@@ -11,26 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151020131739) do
+ActiveRecord::Schema.define(version: 20151020135656) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "borrows", force: :cascade do |t|
+  create_table "deals", force: :cascade do |t|
     t.integer  "borrower_id"
+    t.integer  "lender_id"
     t.integer  "item_id"
-    t.date     "date_from"
     t.date     "date_to"
+    t.date     "date_from"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.integer  "user_id"
   end
 
   create_table "items", force: :cascade do |t|
     t.string   "name"
-    t.integer  "owner_id"
-    t.integer  "borrow_id"
-    t.string   "picture"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -38,10 +36,8 @@ ActiveRecord::Schema.define(version: 20151020131739) do
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "city"
-    t.integer  "item_id"
-    t.string   "profile_pic"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
