@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'deals#new'
+  root 'deals#index'
+
   resources :deals
 
   # The priority is based upon order of creation: first created -> highest priority.
