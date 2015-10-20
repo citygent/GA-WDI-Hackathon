@@ -1,0 +1,45 @@
+********************************
+*       HACKATHON IDEAS        *
+*           theme:             *
+*           TRAVEL             *
+********************************
+=========
+Shrapnel
+=========
+An app that allows you to hook up with fellow users in your area who also don't have the minimum currencies to be able to make an exchange for a local one. 
+
+Will work out how much you have before suggesting temaing up and going to the desk.
+Will work out how to split the money afterwards fairly
+Can work at home as well as in airport (with people from your area)
+
+
+=========
+Kitbag
+=========
+What's the minimum kit you can take with you?
+Let's users put in where they're going, matches weather etc.
+Users decide on what activities they're likely to be doing (posh dinner, hiking day, caveing)
+Spits out reccommended stuff to take. Including travel chargers, documents, sunscreen/bites stuff etc.
+Users can put in a history/what they used or didn't that will feed the kitbag algorithm but also let users see again if they go to same place/similar weekend what they ended up wearing or not. 
+
+
+========
+NotFlying
+========
+Similar to Shrapnel but the other way around: Anything a user isn't taking with them/can't use up, can be put up for adoption before they fly home. Travel adaptors, public transport passes, etc.
+------
+Also gear you need but is difficult to take: Laptops(?) filming gear, sporting equipment, musical instruments...
+
+========
+Wifi Password
+========
+Users can put in the wifi password of cafes and hotels they've visited and got the password for, so that other users can use said wifi when they're nearby. MWHAHAHAHAHA
+
+========
+Hitchhiker
+========
+Sure this has been done? Users can say they need to get somewhere and people signup for helping them out with return for a fee/some company on the roadtrip. Users and Drivers can review each other for safeties. 
+
+========
+Uber Surge Pricing
+========
