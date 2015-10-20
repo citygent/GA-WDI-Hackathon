@@ -40,3 +40,9 @@ Deal.create(borrower_id: 9, lender_id: 1, item_id: 7, date_to: '2015-10-22', dat
 Deal.create(borrower_id: 10, lender_id: 8, item_id: 6, date_to: '2015-10-22', date_from: '2015-10-27')
 Deal.create(borrower_id: 11, lender_id: 1, item_id: 1, date_to: '2015-10-22', date_from: '2015-10-26')
 Deal.create(borrower_id: 12, lender_id: 2, item_id: 2, date_to: '2015-10-22', date_from: '2015-10-28')
+
+Deal.create(borrower_id: 1, request: 'Kitten', date_to: '2015-10-22', date_from: '2015-10-28')
+Deal.create(borrower_id: 8, request: '3g of cocain',date_to: '2015-10-22', date_from: '2015-10-28')
+Deal.create(borrower_id: 11, request: 'a sandwich',date_to: '2015-10-22', date_from: '2015-10-28')
+Deal.create(borrower_id: 6, request: 'a better app',date_to: '2015-10-22', date_from: '2015-10-28')
+
