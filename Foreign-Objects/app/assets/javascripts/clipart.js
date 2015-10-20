@@ -1,6 +1,6 @@
 $(document).ready(function(){
   console.log('BINDING A PRY');
-  $searchBox = $('#search-box');
+  $searchBox = $('.search-box');
   $searchBox.on('blur', getClipart)
   $result = $('#result')
   function getClipart(){

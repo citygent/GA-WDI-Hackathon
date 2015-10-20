@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
 
-  root 'deals#index'
+  root 'static#index'
 
-  resources :deals
+  resources :deals do 
+    post '/deals' => 'deals#index'
+  end
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
