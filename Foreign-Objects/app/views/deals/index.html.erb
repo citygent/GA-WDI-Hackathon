@@ -1,6 +1,16 @@
-<div id="container">
-  <div class="question"><h2>I HAVE A</h2><h1>THING</h1>
-  </div>
-  <div class="question"><h2>I NEED A</h2><h1>THING</h1>
-  </div>
-</div>
+<h2>Wanted</h2>
+<ul>
+  <% @deals.each do |deal| %>
+    <% unless deal.lender %>
+        <li><%= deal.borrower.name %> wants: <%= deal.request %> (<%= deal.borrower.city %>)</li>
+    <% end %>
+  <% end %>
+</ul>
+<h2>Completed Deals</h2>
+<ul>
+  <% @deals.each do |deal| %>
+    <% if deal.lender %>
+        <li><%= deal.borrower.name %> borrowed <%= deal.item.name %> from <%= deal.lender.name %></li>
+    <% end %>
+  <% end %>
+</ul>

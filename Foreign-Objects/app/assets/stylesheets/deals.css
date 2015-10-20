@@ -1,14 +1,16 @@
 #header {
   display: block;
   background-image: url(../images/headerlogo.png);
-  height: 180px;
-  width: 300px;
+  height: 270px;
+  width: 450px;
   margin: 0 auto;
   background-size: contain;
   background-repeat: no-repeat;
   text-align: center;
 }
-
+* a {
+  text-decoration: none;
+}
 h2 {
   color: #efffff;
   display: block;
@@ -34,6 +36,16 @@ h3 {
 body {
   background: #1a1a1a;
   font-family: 'Londrina Outline', cursive;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  font-family: helvetica;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .question {
