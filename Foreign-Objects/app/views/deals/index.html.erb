@@ -1,0 +1,5 @@
+<ul>
+<% @deals.each do |deal| %>
+<li><strong><%= deal.item.name %></strong> - Belongs to: <em><%= deal.lender.name %></em> Loaned to: <em><%= deal.borrower.name %></em></li>
+<% end %>
+</ul>
