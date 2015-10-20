@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>BINDING A PRY WITH STEPHEN FRY</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-  <script src="main.js"></script>
-</head>
-<body>
+
   <div id="result"></div>
   <%= form_for @deal do |form| %>
   <%= form.label 'Who are you?' %>
@@ -17,5 +8,3 @@
   <%= form.text_field :request, class: "search-box" %>
   <%= form.submit 'Find me the thing' %>
 <% end %>
-</body>
-</html>
