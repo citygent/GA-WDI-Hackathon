@@ -1,0 +1,12 @@
+<%= form_for @user do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :city %>
+  <%= f.submit "Create" %>
+<% end %>
+
+
+ <%= simple_form_for ([@deals, @deal.build]) do |f| %>
+  <%= f.input :date_to, as: :date, html5: true %>
+  <%= f.input :date_from, as: :time, html5: true %>
+  <%= f.button :submit %>
+<% end %> 
