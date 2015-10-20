@@ -3,14 +3,14 @@
 
 
 h2 {
-  color: yellow;
+  color: lightcyan;
   display: block;
   margin: 0 auto;
   font-size: 60px;
 }
 
 h1 {
-  color: yellow;
+  color: lightcyan;
   display: block;
   margin: 0 auto;
   font-size: 85px;
@@ -18,14 +18,14 @@ h1 {
 }
 
 h3 {
-  color: yellow;
+  color: lightcyan;
   display: block;
   margin: 0 auto;
   font-size: 85px;
 }
 
 body {
-  background: red;
+  background: midnightblue;
   font-family: helvetica;
 }
 
