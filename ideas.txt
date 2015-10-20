@@ -27,8 +27,9 @@ Users can put in a history/what they used or didn't that will feed the kitbag al
 NotFlying
 ========
 Similar to Shrapnel but the other way around: Anything a user isn't taking with them/can't use up, can be put up for adoption before they fly home. Travel adaptors, public transport passes, etc.
-------
+
 Also gear you need but is difficult to take: Laptops(?) filming gear, sporting equipment, musical instruments...
+========
 
 ========
 Wifi Password
@@ -40,6 +41,3 @@ Hitchhiker
 ========
 Sure this has been done? Users can say they need to get somewhere and people signup for helping them out with return for a fee/some company on the roadtrip. Users and Drivers can review each other for safeties. 
 
-========
-Uber Surge Pricing
-========
