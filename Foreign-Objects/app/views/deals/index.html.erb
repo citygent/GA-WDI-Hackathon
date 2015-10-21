@@ -1,15 +1,19 @@
+<%= form_for @deal do |form| %>
+  <%= form.label 'I am:' %>
+  <%= form.collection_select(:lender_id, User.all, :id, :name) %>
 <h2>Wanted</h2>
 <ul>
   <% @deals.each do |deal| %>
-    <% unless deal.lender %>
-        <li><%= deal.borrower.name %> wants: <%= deal.request %> (<%= deal.borrower.city %>)</li>
+    <% if deal.borrower && !deal.lender %>
+        <li><%= deal.borrower.name %> wants: <%= deal.request %> (<%= deal.borrower.city %>) <%= hidden_field(:borrower_id, deal.borrower.name) %><%= form.submit "I have this!" %></li>
     <% end %>
   <% end %>
 </ul>
+<% end %>
 <h2>Completed Deals</h2>
 <ul>
   <% @deals.each do |deal| %>
-    <% if deal.lender %>
+    <% if deal.lender && deal.borrower %>
         <li><%= deal.borrower.name %> borrowed <%= deal.item.name %> from <%= deal.lender.name %></li>
     <% end %>
   <% end %>

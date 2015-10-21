@@ -1,6 +1,7 @@
 class DealsController < ApplicationController
 
   def index
+    @deal = Deal.new
     @deals = Deal.all
     @users = User.all
   end
@@ -22,7 +23,7 @@ class DealsController < ApplicationController
 
 private 
   def deal_params
-    params.require(:deal).permit(:borrower_id, :request, :date_to, :date_from)
+    params.require(:deal).permit(:borrower_id, :lender_id, :request, :date_to, :date_from)
   end
 
 end
