@@ -54,6 +54,10 @@ li {
   display: block;
   margin-bottom: 5%;
 }
+.form {
+  text-align: center;
+  line-height: 2.0;
+}
 
 #container {
   display: block;

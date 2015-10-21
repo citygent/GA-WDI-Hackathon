@@ -1,10 +1,24 @@
-
-  <div id="result"></div>
+<div id="result"></div>
+<div class="form">
   <%= form_for @deal do |form| %>
   <%= form.label 'Who are you?' %>
   <%= form.collection_select(:borrower_id, User.all, :id, :name) %>
 <br>
   <%= form.label 'What would you like to borrow?' %>
   <%= form.text_field :request, class: "search-box" %>
+<br>
+  <%= form.label 'Which city are you travelling to?' %>
+  <%= form.collection_select(:request_city, User.all.select(:city).uniq, :city, :city) %>
+
+<br>
+  <%= form.label 'Starting' %>
+    <%= form.date_select(:date_from, selected: Date.today) %>
+
+  <br>
+  <%= form.label 'Ending' %>
+    <%= form.date_select(:date_to, selected: Date.today) %>
+<br>
   <%= form.submit 'Find me the thing' %>
 <% end %>
+
+</div>
